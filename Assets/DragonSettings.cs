@@ -5,8 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "DragonSettings", menuName = "ScriptableObjects/CreateDragonSettings")]
 public class DragonSettings : ScriptableObject
 {
+    public float InitialMoveSpeed;
     public float moveSpeed;
     public float moveSpeedUpRate;
+    public float InitialTurnSpeed;
     public float turnSpeed;
     public float turnSpeedUpRate;
     public float intervalBody;
@@ -15,5 +17,11 @@ public class DragonSettings : ScriptableObject
     {
         moveSpeed *= moveSpeedUpRate;
         turnSpeed *= turnSpeedUpRate;
+    }
+
+    public void Reset()
+    {
+        moveSpeed = InitialMoveSpeed;
+        turnSpeed = InitialTurnSpeed;
     }
 }

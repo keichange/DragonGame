@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7daf566562ce49149a1824f6da8b694f, type: 3}
   m_Name: DragonSettings
   m_EditorClassIdentifier: 
-  moveSpeed: 10.717944
-  moveSpeedUpRate: 1.1
-  turnSpeed: 171.4871
-  turnSpeedUpRate: 1.1
+  InitialMoveSpeed: 8
+  moveSpeed: 8
+  moveSpeedUpRate: 1.05
+  InitialTurnSpeed: 100
+  turnSpeed: 100
+  turnSpeedUpRate: 1.05
   intervalBody: 4
