@@ -9,11 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7daf566562ce49149a1824f6da8b694f, type: 3}
-  m_Name: DragonSettings
+  m_Script: {fileID: 11500000, guid: cb0bef4f28b3c8b4d92d1790c3f6f0fa, type: 3}
+  m_Name: ScoreObject
   m_EditorClassIdentifier: 
-  moveSpeed: 10.717944
-  moveSpeedUpRate: 1.1
-  turnSpeed: 171.4871
-  turnSpeedUpRate: 1.1
-  intervalBody: 4
+  score: 0

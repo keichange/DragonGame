@@ -16,32 +16,29 @@ public class DragonMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
-        {
-            MoveForward();
-        }
+        MoveForward();
         if (Input.GetKey(KeyCode.D))
         {
-            MoveRight();
+            TurnRight();
         }
         if (Input.GetKey(KeyCode.A))
         {
-            MoveLeft();
+            TurnLeft();
         }
     }
 
     private void MoveForward()
     {
-        transform.position += transform.forward * ds.moveSpeed;
+        transform.position += transform.forward * ds.moveSpeed * Time.deltaTime;
     }
 
-    public void MoveRight()
+    public void TurnRight()
     {
-        transform.Rotate(new Vector3(0, ds.turnSpeed, 0));
+        transform.Rotate(new Vector3(0, ds.turnSpeed * Time.deltaTime, 0));
     }
 
-    public void MoveLeft()
+    public void TurnLeft()
     {
-        transform.Rotate(new Vector3(0, -1 * ds.turnSpeed, 0));
+        transform.Rotate(new Vector3(0, -1 * ds.turnSpeed * Time.deltaTime, 0));
     }
 }

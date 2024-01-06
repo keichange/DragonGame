@@ -17,7 +17,7 @@ public class RightButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     // Update is called once per frame
     void Update()
     {
-        if (isHold) dm.MoveRight();
+        if (isHold) dm.TurnRight();
     }
 
     public void OnPointerDown(PointerEventData eventData)

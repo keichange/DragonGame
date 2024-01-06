@@ -33,5 +33,9 @@ public class BodyManager : MonoBehaviour
             nextBody.transform.position = transform.position + transform.forward * -1 * ds.intervalBody;
             nextBody.GetComponent<BodyManager>().previousBody = gameObject;
         }
+        else
+        {
+            nextBody.GetComponent<BodyManager>().addBody();
+        }
     }
 }

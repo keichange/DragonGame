@@ -6,6 +6,14 @@ using UnityEngine;
 public class DragonSettings : ScriptableObject
 {
     public float moveSpeed;
-    public float intervalBody;
+    public float moveSpeedUpRate;
     public float turnSpeed;
+    public float turnSpeedUpRate;
+    public float intervalBody;
+
+    public void SpeedUp()
+    {
+        moveSpeed *= moveSpeedUpRate;
+        turnSpeed *= turnSpeedUpRate;
+    }
 }

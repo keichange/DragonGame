@@ -17,7 +17,7 @@ public class LeftButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     // Update is called once per frame
     void Update()
     {
-        if (isHold) dm.MoveLeft();
+        if (isHold) dm.TurnLeft();
     }
 
     public void OnPointerDown(PointerEventData eventData)
